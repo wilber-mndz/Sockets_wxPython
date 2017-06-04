@@ -20,6 +20,8 @@ class Servidor(form_servidor.Servidor, funciones_servidor.FuncionesServidor):
         form_servidor.Servidor.__init__(self, parent)
         #Establecemos el proseso escuchar que estara a la espera de establecer conexion
         self.thread_escuchar = threading.Thread(target=self.escuchar)
+        # Evita que el trhead se siga ejecutando al cerrar el programa
+        self.thread_escuchar.setDaemon(True)
         #Iniciamos el proceso escuchar
         self.thread_escuchar.start()
         miIP = "Esperando conexion IP SERVIDOR " + (self.obtener_ip())
