@@ -1,0 +1,5 @@
+INTEGRANTES
+	Wilber David Mendez Rodriguez	MR12039
+	Roberto Carlos Cardenas Ramirez	cr12xxx
+
+El codigo esta separada en 2 archivos uno para el diseño del form (form_cliente y form_servidor) y otro que contiene las instrucciones del programa, ademas el servidor tine una clase con funciones aparte donde estan los metodos que permiten ejecutar los comandos de sistema.
